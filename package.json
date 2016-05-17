@@ -1,0 +1,27 @@
+{
+  "name": "angular-input-time-chrome",
+  "version": "1.0.0",
+  "description": "angular input type\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[Cof type time, similar to chrome\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D google chrome implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rofrol/angular-input-time-chrome.git"
+  },
+  "keywords": [
+    "angular",
+    "input",
+    "time"
+  ],
+  "author": "Roman Frołow <rofrol@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rofrol/angular-input-time-chrome/issues"
+  },
+  "homepage": "https://github.com/rofrol/angular-input-time-chrome#readme",
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
