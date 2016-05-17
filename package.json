@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/rofrol/angular-input-time-chrome#readme",
   "dependencies": {
-    "angular": "^1.5.5"
+    "angular": "^1.5.5",
+    "keyboardevent-key-polyfill": "^1.0.2"
   }
 }

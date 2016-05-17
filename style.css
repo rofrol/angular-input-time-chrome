@@ -1,0 +1,63 @@
+input.time[type="text"]{
+  /* don't show cursor */
+  color : transparent;
+  text-shadow : 0 0 0 #000;
+  font-family: Consolas, monospace !important;
+}
+input.time[type="text"]:hover{
+  /* default cursor */
+  cursor: default;
+}
+.time-wrapper {
+  position: relative;
+}
+
+.time-wrapper input:focus ~ .time-clearer-wrapper, .time-wrapper:hover .time-clearer-wrapper {
+  display: flex;
+}
+
+.time-clearer-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  height: 100%;
+  width: 16px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-wrapper input:focus ~ .time-clearer-wrapper2, .time-wrapper:hover .time-clearer-wrapper2 {
+  display: flex;
+}
+
+.time-clearer-wrapper2 {
+  position: absolute;
+  right: 4px;
+  top: -6px;
+  height: 100%;
+  width: 16px;
+  border: none;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time-clearer {
+  text-decoration: none;
+  background: none !important;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0 !important;
+  font-size: 16px;
+}
+
+.time-clearer:focus {outline:0;}
+
+.time-clearer:focus,
+.time-clearer:active {
+  background-color: transparent;
+}

@@ -1,5 +1,17 @@
 <!doctype html>
+<link rel="stylesheet" type="text/css" href="style.css">
 
-<div ng-app="MyApp" ng-controller="MyController as mycontroller">Hello {{mycontroller.name}}!</div>
+<div ng-app="MyApp" ng-controller="MyController as mycontroller">
+  <span class="time-wrapper">
+      <input type="text" class="time" id="hourFrom" ng-model="mycontroller.hourFrom" ng-keypress="mycontroller.myKeyPress($event);" ng-click="mycontroller.highlight($event)">
+      <span class="time-clearer-wrapper" ng-show="mycontroller.hourFrom !== 'mycontroller.format.string'"><button class="time-clearer" ng-click="mycontroller.clearTime('hourFrom')">&times;</button></span>
+      <span class="time-clearer-wrapper2">
+          <button class="time-clearer" ng-click="mycontroller.changeTime('hourFrom', 1)">&blacktriangle;</button>
+          <button class="time-clearer" ng-click="mycontroller.changeTime('hourFrom', -1)">&blacktriangledown;</button>
+      </span>
+  </span>
+</div>
 <script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/keyboardevent-key-polyfill/index.js"></script>
+<script>keyboardeventKeyPolyfill.polyfill();</script>
 <script src="index.js"></script>
